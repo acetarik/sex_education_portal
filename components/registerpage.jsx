@@ -168,7 +168,7 @@ export default function RegisterPage() {
               type="password"
               id="passw"
               name="passw"
-              placeholder="Password"
+              placeholder="Password(8 chars minimum)"
               className="h-10 rounded-3xl p-6 w-60"
               onChange={(e) => setPassword(e.target.value)}
             />
