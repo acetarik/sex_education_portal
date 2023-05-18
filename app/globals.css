@@ -1,0 +1,1238 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@500&family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Lato:wght@300&family=Raleway:wght@500&display=swap');
+.jk{
+
+  /* background: rgb(2,0,36); */
+  background:linear-gradient(135deg, #FFB1B1 0%, #FFD9B3 20%, #FFEDC3 40%, #C7E6A4 60%, #A2D2FF 80%, #BAA9FF 100%)
+}
+ .jk2{
+  /* background: rgb(2,0,36); */
+
+  background: linear-gradient(90deg, #3970de 0%, #020430 100%);
+
+
+
+ }
+ .cardui {
+  position: relative;
+  width: 20rem;
+  color: #258730;
+  font-weight: bolder;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.cardgender {
+  position: relative;
+  width: 20rem;
+  color: #fcfaf4;
+  font-weight: bolder;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.cardui::before,
+.cardui::after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: #e2b808;
+  transition: all smooth 0s;
+}
+.cardgender.cardpuberty{
+  color: #fffef9;
+}
+.cardgender.har{
+  color: #272727;
+}
+.cardgender.har::before,
+.cardgender.har::after{
+  background-color: #deded1c8;
+  color: #272727;
+  font-size: 23px;
+  font-weight: 200;
+  padding: 4px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.cardgender.cardpuberty::before,
+.cardgender.cardpuberty::after
+{
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fffef9;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: #90adc6;
+  transition: all 0s;
+  padding: 5px;
+}
+.cardgender.cardpuberty.m
+{
+  color: #fcfaf4;
+}
+.cardgender.cardpuberty.m::before,
+.cardgender.cardpuberty.m::after
+{
+  background-color: #8ea7bd;
+}
+.cardgender.cardpuberty.p1:hover::after
+{
+  content: "One of the initial signs of puberty in females is the growth of breasts. This is caused by an increase in estrogen, a hormone responsible for secondary sexual characteristics.";
+}
+.cardgender.cardpuberty.p2:hover::after
+{
+  content: " It involves the shedding of the uterus lining and vaginal bleeding in a monthly cycle. It usually begins around the ages of 9 to 15.";
+}
+.cardgender.cardpuberty.p3:hover::after
+{
+  content: "Pubic hair begins to grow in the genital area and eventually extends to the underarms. This is a normal and expected change during puberty.";
+}
+.cardgender.cardpuberty.p4:hover::after
+{
+  content: "The reproductive system undergoes development, including the growth of the uterus and the maturation of the ovaries.";
+}
+.cardgender.cardpuberty.m.p5:hover::after
+{
+  content: "One of the first signs of male puberty is the growth of the penis and testicles - triggered by the release of testosterone";
+}
+.cardgender.cardpuberty.m.p6:hover::after
+{
+  content: "Pubic hair begins to grow in the genital area and eventually extends to the face, underarms, and other parts of the body.";
+}
+.cardgender.cardpuberty.m.p7:hover::after
+{
+  content: "The voice deepens as the larynx, or voice box, grows in size during puberty.";
+}
+.cardgender.cardpuberty.m.p8:hover::after
+{
+  content: "Hair begins to grow on the face, chest, and other parts of the body. This is a normal and expected change in males.";
+}
+.cardgender.cardpuberty.m.p9:hover::after
+{
+  content: "Males experience a growth spurt during puberty, resulting in an increase in height and changes in body shape.";
+}
+.cardgender::before,
+.cardgender::after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: #ffda21;
+  transition: all 0.5s;
+  padding: 2px;
+}
+.cardgender.boys::before,
+.cardgender.boys::after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: #2a601d;
+  padding: 2px;
+  transition: all 0.5s;
+}
+.cardgender.intersex::before,
+.cardgender.intersex::after {
+  color: #a62629;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.cardgender.t::before,
+.cardgender.t::after {
+  color: #fcfaf4;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: #48854f;
+}
+.cardgender.t.m
+{
+  color: #2a601d;
+}
+.cardgender.t.m::before,
+.cardgender.t.m::after {
+  color: #fcfaf4;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: #2a601deb;
+}
+.adult::before,
+.adult::after {
+  color: #ffbf6c;
+  background-color: #a62629;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.teen::before,
+.teen::after {
+  color: #fcfaf4;
+  font-size: 30px;
+  background-color: #d6630f;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.child::before,
+.child::after {
+  color: #e2b808;
+  font-size: 30px;
+  background-color: #2a601d;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.cardui.child.card1:hover::after{
+  content: "Gender Anatomy";
+}
+.cardui.child.card2:hover::after{
+  content: "Safety";
+}
+.cardui.teen.card1:hover::after{
+    content: "Puberty";
+}
+.cardui.teen.card2:hover::after{
+  content: "Gender Anatomy";
+}
+.cardui.teen.card3:hover::after{
+  content: "Harrassment";
+}
+.cardgender.t::before,
+.cardgender.t::after {
+  color: #fcfaf4;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: #48854f;
+}
+.cardgender.t.m
+{
+  color: #2a601d;
+}
+.cardgender.t.m::before,
+.cardgender.t.m::after {
+  color: #fcfaf4;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: #2a601deb;
+}
+.adult::before,
+.adult::after {
+  color: #ffbf6c;
+  background-color: #a62629;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.teen::before,
+.teen::after {
+  color: #fcfaf4;
+  font-size: 30px;
+  background-color: #d6630f;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.child::before,
+.child::after {
+  color: #e2b808;
+  font-size: 30px;
+  background-color: #2a601d;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.cardui.child.card1:hover::after{
+  content: "Gender Anatomy";
+}
+.cardui.child.card2:hover::after{
+  content: "Safety";
+}
+.cardui.teen.card1:hover::after{
+    content: "Puberty";
+}
+.cardui.teen.card2:hover::after{
+  content: "Gender Anatomy";
+}
+.cardui.teen.card3:hover::after{
+  content: "Harrassment";
+}
+.cardui.cardgender.intersex.is1:hover:after {
+  content: "It's essential to treat others kindly, no matter how their bodies might look or be different.";
+}
+.cardui.cardgender.intersex.is2:hover:after {
+  content: "Intersex just means having bodies with unique characteristics. There is no shame in it!";
+}
+.cardgender.t.ga1:hover:after {
+  content: "The clitoris is a small, sensitive organ located at the top of the vulva. It contains a lot of nerve endings.";
+}
+.cardgender.cardgender.t.ga2:hover:after{
+  content: "The labia are the folds of skin surrounding the vaginal opening. They help protect the sensitive areas of the vulva";
+}
+.cardgender.cardgender.t.ga3:hover:after{
+  content: "The vaginal opening is where the vagina begins. It is the entryway to the reproductive system.";
+}
+.cardgender.cardgender.t.ga4:hover:after{
+  content: url("../assets/vagina2.png");
+}
+.cardgender.cardgender.t.ga5:hover:after{
+  content: "The uterus is a muscle in a female's lower abdomen that helps with pregnancy and where a baby grows.";
+}
+.cardgender.cardgender.t.ga6:hover:after{
+  content: "The ovaries are two small organs that produce eggs and hormones like estrogen and progesterone.";
+}
+.cardgender.cardgender.t.ga7:hover:after{
+  content: "The fallopian tubes are thin tubes that connect the ovaries to the uterus and where fertilization can occur.";
+}
+.cardgender.cardgender.t.ga8:hover:after{
+  content: "The vagina is a muscular canal that connects the uterus to the outside of the body, allowing for intercourse and the passage of menstrual blood.";
+}
+.cardgender.cardgender.t.ga9:hover:after{
+  content: url("../assets/internal.png");
+}
+.cardgender.t.ga10:hover:after{
+  content: "The penis is a male reproductive organ consisting of a shaft and glans. It functions for urination and allows sexual intercourse.";
+}
+.cardgender.t.ga11:hover:after{
+  content: "The scrotum is a skin pouch below the penis that holds the testicles. It helps regulate their temperature and is involved in sperm production.";
+}
+.cardgender.t.ga12:hover:after{
+  content: "It is a small, walnut-sized gland located below the bladder in males. It produces a fluid that mixes with sperm to create semen, which helps to nourish and protect sperm.";
+}
+.cardgender.t.ga13:hover:after{
+  content: "They produce a fluid that mixes with sperm to form semen. This fluid provides nutrients and energy to the sperm, aiding their ability to swim and survive.";
+}
+.cardgender.t.ga14:hover:after{
+  content: "The vas deferens are two long tubes that transport sperm from the testicles to the urethra.";
+}
+.cardgender.t.ga15:hover:after{
+  content: url("../assets/insidemale2.png");
+}
+.cardgender.har.i1:hover::after{
+  content: "Verbal Sexual Harassment involves making unwanted sexual comments, jokes, innuendos, persistent requests for sexual favors or explicit discussions about someone's body or sexual activities.";
+}
+.cardgender.har.i2:hover::after{
+  content: "Physical sexual harassment involves unwanted physical contact, such as touching, grabbing, groping, or brushing against someone's body without their consent.";
+}
+.cardgender.har.i3:hover::after{
+  content: "Online sexual harassment can involve sending unsolicited explicit messages or images, sharing intimate content without consent, or engaging in online sexual bullying or stalking.";
+}
+.cardgender.har.i4:hover::after{
+  content: "This refers to any unwelcome sexual advances or pressure within a dating or intimate relationship. It can include coerced sexual acts, manipulation, or emotional abuse.";
+}
+.cardui::before {
+  top: 0;
+  right: 0;
+  border-radius: 0 15px 0 100%;
+}
+
+.cardui::after {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100%  0 15px;
+}
+
+.cardui:hover::before,
+.cardui:hover:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+.cardgender:hover::before,
+.cardgender:hover:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: all 0s;
+}
+
+.cardui.adult.card1:hover:after
+{
+    content: "Pregnancy";
+}
+.cardui.adult.card2:hover:after {
+    content: "Harrassment";
+  }
+.cardui.adult.card3:hover:after {
+    content: "Family Planning";
+}
+
+.cardui.adult.card1:hover:after
+{
+    content: "Pregnancy";
+}
+.cardui.adult.card2:hover:after {
+    content: "Harrassment";
+  }
+.cardui.adult.card3:hover:after {
+    content: "Family Planning";
+}
+.brolio{
+background-color: #e2b808;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23404' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23505'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+
+
+
+}
+.broli{
+  background-image: url("./BRO.svg");
+  background-repeat: none;
+  background-size: cover;
+}
+
+
+.cardui.cardui1:hover:after {
+  content: "CHILDREN";
+}
+.cardui.cardui2:hover:after {
+  content: "TEENS";
+}
+.cardui.cardui3:hover:after {
+  content: "ADULTS";
+}
+.cardui.cardgender:hover:after {
+  content: "Girls have a vulva. These parts help with peeing and having babies when they grow up.";
+}
+.cardui.cardgender.inside:hover:after {
+  content: "Inside girls' bodies, there are organs like the uterus, ovaries, and fallopian tubes. These organs have very important roles later in life.";
+}
+.cardui.cardgender.boyin:hover:after
+{
+  content: "Boys have a penis. They also have a scrotum, which holds their testicles.";
+}
+.cardui.cardgender.boyout:hover:after
+{
+  content:"Inside boys' bodies, there are organs like the prostate gland and vas deferens. These help with making and delivering tiny cells called sperm.";
+}
+ html{
+  width:100%;
+  cursor: default;
+ }
+ body{
+  font-family: "Raleway";
+
+    
+ }
+ .rale{
+  font-family: "Raleway";
+ }
+ .jk3{
+  /* background: rgb(2,0,36); */
+
+  background: linear-gradient(270deg, #3970de 0%, #020430 100%);
+
+ }
+ .loaderbang {
+  width: 48px;
+  height: 48px;
+  margin: auto;
+  position: relative;
+}
+.srew{
+  background-color: rgba(187, 184, 184, 0.939);
+}
+.scrolling{
+  color: #f5f5f5;
+  background-color: #e2b808;
+}
+.trans{
+  transition: ease-in 0.4s;
+}
+/* Target the scrollbar track */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Target the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #20882c;
+  border-radius: 5px;
+}
+
+/* Target the scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.loaderbang:before {
+  content: '';
+  width: 48px;
+  height: 5px;
+  background: yellow;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  border-radius: 50%;
+  -webkit-animation: shadow324 0.5s linear infinite;
+          animation: shadow324 0.5s linear infinite;
+}
+
+.loaderbang:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: #e2b808;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 4px;
+  -webkit-animation: jump7456 0.5s linear infinite;
+          animation: jump7456 0.5s linear infinite;
+}
+
+@-webkit-keyframes jump7456 {
+  15% {
+    border-bottom-right-radius: 3px;
+  }
+
+  25% {
+    -webkit-transform: translateY(9px) rotate(22.5deg);
+            transform: translateY(9px) rotate(22.5deg);
+  }
+
+  50% {
+    -webkit-transform: translateY(18px) scale(1, .9) rotate(45deg);
+            transform: translateY(18px) scale(1, .9) rotate(45deg);
+    border-bottom-right-radius: 40px;
+  }
+
+  75% {
+    -webkit-transform: translateY(9px) rotate(67.5deg);
+            transform: translateY(9px) rotate(67.5deg);
+  }
+
+  100% {
+    -webkit-transform: translateY(0) rotate(90deg);
+            transform: translateY(0) rotate(90deg);
+  }
+}
+
+@keyframes jump7456 {
+  15% {
+    border-bottom-right-radius: 3px;
+  }
+
+  25% {
+    -webkit-transform: translateY(9px) rotate(22.5deg);
+            transform: translateY(9px) rotate(22.5deg);
+  }
+
+  50% {
+    -webkit-transform: translateY(18px) scale(1, .9) rotate(45deg);
+            transform: translateY(18px) scale(1, .9) rotate(45deg);
+    border-bottom-right-radius: 40px;
+  }
+
+  75% {
+    -webkit-transform: translateY(9px) rotate(67.5deg);
+            transform: translateY(9px) rotate(67.5deg);
+  }
+
+  100% {
+    -webkit-transform: translateY(0) rotate(90deg);
+            transform: translateY(0) rotate(90deg);
+  }
+}
+
+@-webkit-keyframes shadow324 {
+
+  0%,
+    100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.2, 1);
+            transform: scale(1.2, 1);
+  }
+}
+
+@keyframes shadow324 {
+
+  0%,
+    100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.2, 1);
+            transform: scale(1.2, 1);
+  }
+}
+ .overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  background-color: rgba(0,0,0,0.5);
+  height: 100%;
+  /* filter: blur(8px); */
+  filter: blur(8px);
+  z-index: 9999;
+
+
+ }
+ .wrapper{
+  display: inline-flex;
+  margin: auto;
+  background: #ffffff;
+  height: auto;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  padding: 15px 15px;
+  box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
+}
+.wrapper .option{
+  background: #fff;
+  height: 85%;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 2px solid #2c7436e8;
+  transition: all 0.3s ease;
+}
+.wrapper .option .dot{
+  height: 20px;
+  width: 20px;
+  background: #d9d9d9;
+  border-radius: 50%;
+  position: relative;
+}
+.wrapper .option .dot::before{
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  background: #2c7436e8;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(1.5);
+  transition: all 0.3s ease;
+
+}
+.bloop
+{
+  background-image: url("../assets/bg_gender.png");
+  width: 100%;
+  height: 50%;
+}
+regbtn {
+  font-weight: bolder;
+  color: white;
+  background-color: #e2b608e4;
+}
+
+input[type="radio"]{
+  display: none;
+}
+
+#option-1:checked:checked ~ .option-1,
+#option-3:checked:checked ~ .option-3,
+#option-2:checked:checked ~ .option-2{
+  border-color: #ddb92cd7;
+  background: #ddb92cd7;
+}
+#option-1:checked:checked ~ .option-1 .dot,
+#option-3:checked:checked ~ .option-3 .dot,
+#option-2:checked:checked ~ .option-2 .dot{
+  background: #ffffff;
+}
+#option-1:checked:checked ~ .option-1 .dot::before,
+#option-3:checked:checked ~ .option-3 .dot::before,
+#option-2:checked:checked ~ .option-2 .dot::before{
+  opacity: 1;
+  transform: scale(1);
+}
+.wrapper .option span{
+  font-size: 20px;
+  color: #808080;
+}
+#option-1:checked:checked ~ .option-1 span,
+#option-3:checked:checked ~ .option-3 span,
+#option-2:checked:checked ~ .option-2 span{
+  color: #fff;
+}
+
+
+#option-11:checked:checked ~ .option-1,
+#option-22:checked:checked ~ .option-2{
+  border-color: #ddb92cd7;
+  background: #ddb92cd7;
+}
+#option-11:checked:checked ~ .option-1 .dot,
+#option-22:checked:checked ~ .option-2 .dot{
+  background: #ffffff;
+}
+#option-11:checked:checked ~ .option-1 .dot::before,
+#option-22:checked:checked ~ .option-2 .dot::before{
+  opacity: 1;
+  transform: scale(1);
+}
+.wrapper .option span{
+  font-size: 20px;
+  color: #808080;
+}
+#option-11:checked:checked ~ .option-1 span,
+#option-21:checked:checked ~ .option-2 span{
+  color: #fff;
+}
+ .login-popup{
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  background-color: white;
+  padding:20px;
+  z-index: 10000;
+ }
+ button{
+  border-radius: 1.5rem;
+ }
+ h1{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: x-large;
+  font-weight: 550;
+ }
+.mainpageheadings
+{
+  font-family: TTNorms-Medium,Arial,sans-serif;
+  font-weight: 600;
+  display: block;
+  font-size: 50px;
+  line-height: 1.125;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.mainpageheadings
+{
+  font-family: TTNorms-Medium,Arial,sans-serif;
+  font-weight: 800;
+  display: block;
+  font-size: 45px;
+  line-height: 1.125;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.mainpageheadings
+{
+  font-family: TTNorms-Medium,Arial,sans-serif;
+  font-weight: 800;
+  display: block;
+  font-size: 45px;
+  line-height: 1.125;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.mainpageheadings.ga
+{
+  font-family: TTNorms-Medium,Arial,sans-serif;
+  font-weight: 600;
+  display: block;
+  font-size: 50px;
+  line-height: 1.125;
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+.mainpageheadings
+{
+  font-family: TTNorms-Medium,Arial,sans-serif;
+  font-weight: 600;
+  display: block;
+  font-size: 50px;
+  line-height: 1.125;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.infopagetitle
+{
+  font-style: Gothvetica;
+  font-weight: 600;
+  display: block;
+  font-size: 70px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.mainpagep
+{
+  font-family: TTNorms,Arial,sans-serif;
+  line-height: 60px;
+  font-weight: 400;
+  margin-top: auto;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-bottom: 60px;
+}
+.mainpagep.ga
+{
+  font-family: TTNorms,Arial,sans-serif;
+  line-height: 60px;
+  font-weight: 400;
+  margin-top: -40px;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-bottom: 20px;
+}
+.lat{
+    font-family: "Lato", sans-serif;
+ };
+ .rale{
+  font-family:'Raleway';
+ }
+.cust-img{
+  background-image: url("../assets/retro.jpg");
+  width: 100%;
+ }
+ 
+ .daba1{
+  border-radius: 23px;
+  background: #e0e0e0;
+  
+ }
+ .nuni{
+  font-family: 'Nunito', sans-serif;
+ }
+ .joe{
+  font-family: "Didact Gothic";
+ }
+ .urd{
+  font-family: 'Noto Nastaliq Urdu', serif;
+ }
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+.blur{
+  filter: blur(5px);
+}
+
+/* components/DateTimePicker.css */
+
+.react-datetime-picker {
+  width: 200px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+  padding: 10px;
+}
+
+.react-datetime-picker input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.react-datetime-picker .rdtPicker {
+  z-index: 99999;
+}
+
+.react-datetime-picker .rdtPicker table {
+  width: 100%;
+}
+
+.react-datetime-picker .rdtPicker th,
+.react-datetime-picker .rdtPicker td {
+  padding: 5px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.react-datetime-picker .rdtPicker th {
+  background-color: #f5f5f5;
+  font-weight: normal;
+}
+
+.react-datetime-picker .rdtPicker td.rdtToday .rdtDay {
+  background-color: #e6e6e6;
+}
+
+.react-datetime-picker .rdtPicker td.rdtActive,
+.react-datetime-picker .rdtPicker td.rdtActive:hover,
+.react-datetime-picker .rdtPicker td.rdtActive.rdtToday,
+.react-datetime-picker .rdtPicker td.rdtActive.rdtToday:hover {
+  background-color: #0070f3;
+  color: white;
+  border-radius: 50%;
+}
+.cardloader {
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  border-radius: 0.5rem;
+  max-width: 290px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  background-color: #fff;
+}
+
+.dismiss {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  color: black;
+  border: 2px solid #D1D5DB;
+  font-size: 1rem;
+  font-weight: 300;
+  width: 30px;
+  height: 30px;
+  border-radius: 7px;
+  transition: .3s ease;
+}
+
+.dismiss:hover {
+  background-color: #ee0d0d;
+  border: 2px solid #ee0d0d;
+  color: #fff;
+}
+
+.bedder {
+  padding: 1.25rem 1rem 1rem 1rem;
+}
+
+.scrimage {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #e2feee;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 9999px;
+  animation: animate .6s linear alternate-reverse infinite;
+  transition: .6s ease;
+}
+
+.scrimage svg {
+  color: #0afa2a;
+  width: 2rem;
+  height: 2rem;
+}
+
+.pontent {
+  margin-top: 0.75rem;
+  text-align: center;
+}
+
+.pitle {
+  color: #066e29;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+
+.message {
+  margin-top: 0.5rem;
+  color: #595b5f;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.fractions {
+  margin: 0.75rem 1rem;
+}
+
+.fishty {
+  display: inline-flex;
+  padding: 0.5rem 1rem;
+  background-color: #1aa06d;
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  justify-content: center;
+  width: 100%;
+  border-radius: 0.375rem;
+  border: none;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.track {
+  display: inline-flex;
+  margin-top: 0.75rem;
+  padding: 0.5rem 1rem;
+  color: #242525;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  justify-content: center;
+  width: 100%;
+  border-radius: 0.375rem;
+  border: 1px solid #D1D5DB;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+.modal-open{
+  overflow: hidden;
+}
+
+@keyframes bruh {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.09);
+  }
+} 
+
+.sley
+{
+  background-image: url(../assets/background_puberty.png);
+  height: auto;
+  width: auto;
+  background-repeat: no-repeat;
+}
+.yum 
+{
+  background-image: url("../assets/yum.png");
+  height: fit-content;
+  width: auto;
+}
+.safetybg
+{
+  background-image: url("../assets/safetybg.png");
+  height: fit-content;
+  width: auto;
+  background-repeat: no-repeat;
+  background-color: #457d58;
+}
+.preg {
+  background-image: url('../assets/prego.png');
+  background-size: cover;
+}
+
+.bc {
+  background-image: url('../assets/bc.png');
+  background-size: contain;
+}
+
+.fin {
+  background-image: url('../assets/fin.png');
+  background-size: cover;
+}
+.cardmbk {
+  position: relative;
+  width: 20rem;
+  color: #fcfaf4;
+  font-weight: bolder;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.cardmbk1 {
+  position: relative;
+  width: 20rem;
+  color: #fcfaf4;
+  font-weight: bolder;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.cardmbk::before,
+.cardmbk::after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: #511064;
+  transition: all 0.5s;
+  padding: 2px;
+}
+
+.cardmbk1::before,
+.cardmbk1::after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: #ca8ca2;
+  transition: all 0.5s;
+  padding: 2px;
+}
+
+.cardui.cardgender.bc:hover:after {
+  color: #471f47;
+  content: "Birth Control";
+}
+
+.cardui.cardgender.fa:hover:after {
+  color: #471f47;
+  content: "Fertlity Awareness";
+}
+
+.cardui.cardgender.fin:hover:after {
+  color: #471f47;
+
+  content: "Financial Impact";
+  font-size: x-large;
+}
+
+.cardui.cardgender.preg:hover:after {
+  color: #471f47;
+  
+  content: "Pregnancy Options";
+}
+
+.cardui.cardmbk.horm:hover:after {
+  color: #e6b0e6;
+  height: 250%;
+  top:5%;
+  padding: 10%;
+  position: absolute;
+  content: "Includes the birth control pill, patch, injection, and vaginal ring. They work by preventing ovulation, thickening cervical mucus to prevent sperm from entering the uterus, and thinning the uterine lining to make it less hospitable to fertilized eggs. Hormonal methods are usually reversible.";
+}
+
+
+.cardui.cardmbk.bar:hover:after {
+  color: #e6b0e6;
+  height: 150%;
+  top:5%;
+  padding: 10%;
+  content: "These include condoms, diaphragms, and cervical caps. They work by physically blocking sperm from entering the uterus. Barrier methods are generally reversible.";
+}
+
+
+.fabg{
+  background-image: url('../assets/fabg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pobg{
+  background-image: url('../assets/pobg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.bodybc{
+  background-color: #a8621feb;
+}
+.cardui.cardmbk.iud:hover:after {
+  color: #e6b0e6;
+  height: 200%;
+  top:5%;
+  padding: 10%;
+
+  position: absolute;
+
+  content: "Small, T-shaped devices that are inserted into the uterus by a healthcare provider. They work by preventing fertilization or implantation of a fertilized egg. IUDs can be either hormonal or non-hormonal and can be either reversible or permanent.";
+}
+
+
+.cardui.cardmbk.ster:hover:after {
+  color: #e6b0e6;
+  height: 150%;
+  top:5%;
+  padding: 10%;
+  content: "Includes surgical methods like tubal ligation for women and vasectomy for men. These are permanent methods of birth control and are intended to be irreversible.";
+}
+
+
+.cardui.cardmbk.nfp:hover:after {
+  color: #e6b0e6;
+  height: 270%;
+  top:10%;
+  padding: 10%;
+
+  position: absolute;
+  content: "Involves tracking your menstrual cycle and identifying the days when you are most likely to conceive. This can be done through various methods, such as tracking basal body temperature, cervical mucus, or using ovulation prediction kits. Natural family planning methods can be either reversible or permanent.";
+}
+
+
+.cardui.cardmbk.ec:hover:after {
+  color: #e6b0e6;
+  height: 230%;
+  padding: 10%;
+  top:5%;
+  content: "Emergency contraceptive pills prevent pregnancy by preventing or delaying ovulation and they do not induce an abortion. The copper-bearing IUD prevents fertilization by causing a chemical change in sperm and egg before they meet.";
+}
