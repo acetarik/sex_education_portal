@@ -11,7 +11,7 @@ import GlobalContext from "../app/api/contexts/GlobalContetxts";
 import { setgid } from "process";
 import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
-import bcrypt from "bcryptjs";
+// import bcrypt from "bcryptjs";
 
 //{<Link href="/register" className="h-[100%] bg-black" />}
 //{<Image src={image1} alt="image1" className="w-[15rem] h-[15rem]" />}
