@@ -9,7 +9,7 @@ import Info from "../../components/info";
 import GlobalContext from "../api/contexts/GlobalContetxts";
 import Link from "next/link";
 export default function Minpage() {
-  const scroller = window.scrollY;
+  // const scroller = window.scrollY;
 
   return (
     <div className="flex flex-col flex-wrap justify-center min-h-screen min-w-fit">
